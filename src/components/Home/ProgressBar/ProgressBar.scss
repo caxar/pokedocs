@@ -1,0 +1,72 @@
+@import "../../../css-config/colors.scss";
+
+.progressbar {
+  height: 20px;
+  width: 100%;
+  background: #e0e0e0;
+  border-radius: 50px;
+  &-wrapper {
+    height: 100%;
+    border-radius: inherit;
+    text-align: right;
+    &.normal {
+      background: $normal_bg;
+    }
+    &.fighting {
+      background: $fighting_bg;
+    }
+    &.flying {
+      background: $flying_bg;
+    }
+    &.poison {
+      background: $poison_bg;
+    }
+    &.ground {
+      background: $ground_bg;
+    }
+    &.rock {
+      background: $rock_bg;
+    }
+    &.bug {
+      background: $bug_bg;
+    }
+    &.ghost {
+      background: $ghost_bg;
+    }
+    &.steel {
+      background: $steel_bg;
+    }
+    &.fire {
+      background: $fire_bg;
+    }
+    &.water {
+      background: $water_bg;
+    }
+    &.grass {
+      background: $grass_bg;
+    }
+    &.electric {
+      background: $electric_bg;
+    }
+    &.psychic {
+      background: $psychic_bg;
+    }
+    &.ice {
+      background: $ice_bg;
+    }
+    &.dragon {
+      background: $dragon_bg;
+    }
+    &.dark {
+      background: $dark_bg;
+    }
+    &.fairy {
+      background: $fairy_bg;
+    }
+    span {
+      padding: 10px 10px 10px 5px;
+      color: #fff;
+      font-weight: 700;
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@import "../../../src/css-config/mixins.scss";
+
+.products {
+  margin-bottom: 100px;
+  &-block {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-between;
+    justify-items: center;
+    row-gap: 40px;
+  }
+}
+
+@include xl {
+  .products {
+    &-block {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+}
+
+@include lg {
+  .products {
+    &-block {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+}
+
+@include md {
+  .products {
+    &-block {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+}

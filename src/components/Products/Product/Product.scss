@@ -1,0 +1,203 @@
+@import "../../../css-config/colors.scss";
+
+.product-card {
+  overflow: hidden;
+  width: 290px;
+  height: 180px;
+  border-radius: 10px;
+  padding: 30px 25px;
+  color: #fff;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  background: currentColor;
+  transition: transform 0.2s;
+  box-shadow: 0 15px 40px 0 currentColor;
+  &.normal {
+    color: $normal;
+  }
+  &.fighting {
+    color: $fighting;
+  }
+  &.flying {
+    color: $flying;
+  }
+  &.poison {
+    color: $poison;
+  }
+  &.ground {
+    color: $ground;
+  }
+  &.rock {
+    color: $rock;
+  }
+  &.bug {
+    color: $bug;
+  }
+  &.ghost {
+    color: $ghost;
+  }
+  &.steel {
+    color: $steel;
+  }
+  &.fire {
+    color: $fire;
+  }
+  &.water {
+    color: $water;
+  }
+  &.grass {
+    color: $grass;
+  }
+  &.electric {
+    color: $electric;
+  }
+  &.psychic {
+    color: $psychic;
+  }
+  &.ice {
+    color: $ice;
+  }
+  &.dragon {
+    color: $dragon;
+  }
+  &.dark {
+    color: $dark;
+  }
+  &.fairy {
+    color: $fairy;
+  }
+  &_text {
+    .text_id {
+      color: rgba(0, 0, 0, 0.5);
+      font-weight: bold;
+      margin-bottom: 8px;
+    }
+    .text_name {
+      font-weight: 900;
+      font-size: 25px;
+      margin-bottom: 12px;
+      color: #fff;
+      text-wrap: balance;
+      width: 50%;
+    }
+    .text_types {
+      display: flex;
+      align-items: center;
+      justify-content: start;
+      gap: 10px;
+      span {
+        display: block;
+        padding: 6px;
+        border-radius: 8px;
+        color: #fff;
+        font-weight: 500;
+      }
+      .type {
+        border-radius: 8px;
+        &.normal {
+          background: $normal_bg;
+        }
+        &.fighting {
+          background: $fighting_bg;
+        }
+        &.flying {
+          background: $flying_bg;
+        }
+        &.poison {
+          background: $poison_bg;
+        }
+        &.ground {
+          background: $ground_bg;
+        }
+        &.rock {
+          background: $rock_bg;
+        }
+        &.bug {
+          background: $bug_bg;
+        }
+        &.ghost {
+          background: $ghost_bg;
+        }
+        &.steel {
+          background: $steel_bg;
+        }
+        &.fire {
+          background: $fire_bg;
+        }
+        &.water {
+          background: $water_bg;
+        }
+        &.grass {
+          background: $grass_bg;
+        }
+        &.electric {
+          background: $electric_bg;
+        }
+        &.psychic {
+          background: $psychic_bg;
+        }
+        &.ice {
+          background: $ice_bg;
+        }
+        &.dragon {
+          background: $dragon_bg;
+        }
+        &.dark {
+          background: $dark_bg;
+        }
+        &.fairy {
+          background: $fairy_bg;
+        }
+      }
+    }
+  }
+  &_image {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    width: 130px;
+    height: 160px;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 20%;
+    width: 30%;
+    height: 30%;
+    background: radial-gradient(
+      rgba(255, 255, 255, 0.1) 2px,
+      #000 2px,
+      transparent 0
+    );
+    background-size: 15px 14px;
+  }
+  &_bg {
+    &::after {
+      content: "";
+      position: absolute;
+      top: 52%;
+      right: -5%;
+      width: 150px;
+      height: 150px;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.11);
+      mask: url("../../../../public/assets/card-bg.svg");
+      mask-repeat: no-repeat;
+      mask-size: contain;
+      -webkit-mask: url("../../../../public/assets/card-bg.svg");
+      -webkit-mask-repeat: no-repeat;
+      -webkit-mask-size: contain;
+    }
+  }
+  &:hover {
+    transform: scale(1.1);
+  }
+}

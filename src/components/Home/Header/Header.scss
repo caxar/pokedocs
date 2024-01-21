@@ -1,0 +1,25 @@
+@import "../../../../src/css-config/mixins.scss";
+
+.header {
+  padding: 50px 0;
+  &-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &_logo {
+      font-size: 35px;
+      text-transform: uppercase;
+      font-weight: 900;
+      img {
+        width: 200px;
+      }
+    }
+  }
+}
+
+@include md {
+  .header-wrapper {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

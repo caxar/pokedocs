@@ -1,0 +1,474 @@
+@import "../../../css-config/colors.scss";
+
+.details {
+  &-bg {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5);
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+  }
+  &-loader {
+    width: 300px;
+    height: 300px;
+    animation: gelatine 0.9s infinite;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  &-content {
+    overflow-y: auto;
+    background: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80vw;
+    height: 90vh;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    &.pokeloader {
+      align-items: center;
+      justify-content: center;
+    }
+    .react-tabs__tab {
+      font-size: 17px;
+      font-weight: 700;
+    }
+    .react-tabs__tab-list {
+      display: flex;
+      justify-content: space-around;
+      // border: none;
+    }
+    &_top {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 25px 40px;
+      gap: 40px;
+      border-radius: 20px;
+      background: currentColor;
+      transition: transform 0.2s;
+      box-shadow: 0 15px 40px 0 currentColor;
+      &:before {
+        content: "";
+        position: absolute;
+        top: 21%;
+        right: 3%;
+        width: 27%;
+        height: 10%;
+        background: radial-gradient(
+          rgba(255, 255, 255, 0.1) 2px,
+          #000 2px,
+          transparent 0
+        );
+        background-size: 15px 14px;
+      }
+      &.normal {
+        color: $normal;
+      }
+      &.fighting {
+        color: $fighting;
+      }
+      &.flying {
+        color: $flying;
+      }
+      &.poison {
+        color: $poison;
+      }
+      &.ground {
+        color: $ground;
+      }
+      &.rock {
+        color: $rock;
+      }
+      &.bug {
+        color: $bug;
+      }
+      &.ghost {
+        color: $ghost;
+      }
+      &.steel {
+        color: $steel;
+      }
+      &.fire {
+        color: $fire;
+      }
+      &.water {
+        color: $water;
+      }
+      &.grass {
+        color: $grass;
+      }
+      &.electric {
+        color: $electric;
+      }
+      &.psychic {
+        color: $psychic;
+      }
+      &.ice {
+        color: $ice;
+      }
+      &.dragon {
+        color: $dragon;
+      }
+      &.dark {
+        color: $dark;
+      }
+      &.fairy {
+        color: $fairy;
+      }
+      img {
+        width: 215px;
+      }
+      .top-text {
+        display: flex;
+        flex-direction: column;
+        // align-items: center;
+        gap: 15px;
+        &_title {
+          font-size: 40px;
+          font-weight: 900;
+          color: #fff;
+        }
+        &_subtitle {
+          font-size: 20px;
+          font-weight: 500;
+          color: rgba(0, 0, 0, 0.5);
+        }
+        &_types {
+          display: flex;
+          align-items: center;
+          justify-content: start;
+          gap: 10px;
+        }
+        span {
+          display: block;
+          padding: 6px;
+          border-radius: 8px;
+          color: #fff;
+          font-weight: 500;
+        }
+        .type {
+          border-radius: 8px;
+          display: flex;
+          align-items: center;
+          padding: 0px 10px;
+          img {
+            width: 25px;
+          }
+          &.normal {
+            background: $normal_bg;
+          }
+          &.fighting {
+            background: $fighting_bg;
+          }
+          &.flying {
+            background: $flying_bg;
+          }
+          &.poison {
+            background: $poison_bg;
+          }
+          &.ground {
+            background: $ground_bg;
+          }
+          &.rock {
+            background: $rock_bg;
+          }
+          &.bug {
+            background: $bug_bg;
+          }
+          &.ghost {
+            background: $ghost_bg;
+          }
+          &.steel {
+            background: $steel_bg;
+          }
+          &.fire {
+            background: $fire_bg;
+          }
+          &.water {
+            background: $water_bg;
+          }
+          &.grass {
+            background: $grass_bg;
+          }
+          &.electric {
+            background: $electric_bg;
+          }
+          &.psychic {
+            background: $psychic_bg;
+          }
+          &.ice {
+            background: $ice_bg;
+          }
+          &.dragon {
+            background: $dragon_bg;
+          }
+          &.dark {
+            background: $dark_bg;
+          }
+          &.fairy {
+            background: $fairy_bg;
+          }
+        }
+      }
+    }
+    &_bottom {
+      .tab-panel_item {
+        padding: 20px 30px;
+        .panel-item_title {
+          font-size: 18px;
+          font-weight: 700;
+          margin-bottom: 10px;
+          &.normal {
+            color: $normal;
+          }
+          &.fighting {
+            color: $fighting;
+          }
+          &.flying {
+            color: $flying;
+          }
+          &.poison {
+            color: $poison;
+          }
+          &.ground {
+            color: $ground;
+          }
+          &.rock {
+            color: $rock;
+          }
+          &.bug {
+            color: $bug;
+          }
+          &.ghost {
+            color: $ghost;
+          }
+          &.steel {
+            color: $steel;
+          }
+          &.fire {
+            color: $fire;
+          }
+          &.water {
+            color: $water;
+          }
+          &.grass {
+            color: $grass;
+          }
+          &.electric {
+            color: $electric;
+          }
+          &.psychic {
+            color: $psychic;
+          }
+          &.ice {
+            color: $ice;
+          }
+          &.dragon {
+            color: $dragon;
+          }
+          &.dark {
+            color: $dark;
+          }
+          &.fairy {
+            color: $fairy;
+          }
+        }
+        table {
+          width: 100%;
+          tr {
+            margin-bottom: 10px;
+            .cat-name {
+              font-size: 17px;
+              font-weight: 700;
+              width: 30%;
+              color: #3d3d40;
+              text-transform: capitalize;
+            }
+            .cat-stats {
+              color: #707070;
+              display: inline-block;
+              font-size: 16px;
+              font-weight: 600;
+              margin-bottom: 8px;
+            }
+            .item-ability {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              p {
+                font-size: 15px;
+                color: #707070;
+                font-weight: 400;
+              }
+            }
+            .item-types {
+              display: flex;
+              align-items: center;
+              gap: 10px;
+              .type {
+                width: 30px;
+                height: 30px;
+                border-radius: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                  width: 20px;
+                }
+                &.normal {
+                  background: $normal_bg;
+                }
+                &.fighting {
+                  background: $fighting_bg;
+                }
+                &.flying {
+                  background: $flying_bg;
+                }
+                &.poison {
+                  background: $poison_bg;
+                }
+                &.ground {
+                  background: $ground_bg;
+                }
+                &.rock {
+                  background: $rock_bg;
+                }
+                &.bug {
+                  background: $bug_bg;
+                }
+                &.ghost {
+                  background: $ghost_bg;
+                }
+                &.steel {
+                  background: $steel_bg;
+                }
+                &.fire {
+                  background: $fire_bg;
+                }
+                &.water {
+                  background: $water_bg;
+                }
+                &.grass {
+                  background: $grass_bg;
+                }
+                &.electric {
+                  background: $electric_bg;
+                }
+                &.psychic {
+                  background: $psychic_bg;
+                }
+                &.ice {
+                  background: $ice_bg;
+                }
+                &.dragon {
+                  background: $dragon_bg;
+                }
+                &.dark {
+                  background: $dark_bg;
+                }
+                &.fairy {
+                  background: $fairy_bg;
+                }
+              }
+            }
+          }
+        }
+      }
+      .evolution {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 40px 40px;
+        &-title {
+          font-size: 19px;
+          font-weight: 700;
+        }
+        &-block {
+          display: flex;
+          align-items: center;
+          justify-content: space-around;
+          width: 100%;
+        }
+        &-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: column;
+          gap: 20px;
+          &_img {
+            display: flex;
+            position: relative;
+            width: 10vw;
+            height: 10vw;
+            .item-img_bg {
+              top: 0;
+              left: 0;
+              width: 100%;
+              &:after {
+                content: "";
+                position: absolute;
+                top: 50%;
+                width: 110%;
+                height: 110%;
+                background: rgba(0, 0, 0, 0.05);
+                transform: translateY(-50%);
+                mask: url("../../../../public/assets/card-bg.svg");
+                mask-repeat: no-repeat;
+                mask-size: cover;
+                -webkit-mask: url("../../../../public/assets/card-bg.svg");
+                -webkit-mask-repeat: no-repeat;
+                -webkit-mask-size: cover;
+              }
+            }
+            img {
+              width: 100%;
+              z-index: 1;
+            }
+          }
+          &_text {
+            text-align: center;
+            .title {
+              font-size: 19px;
+              font-weight: 700;
+            }
+            .subtitle {
+              font-size: 17px;
+              font-weight: 600;
+              color: #707070;
+            }
+          }
+        }
+      }
+    }
+    &_close {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      cursor: pointer;
+    }
+  }
+}
+
+@keyframes gelatine {
+  from,
+  to {
+    transform: scale(1, 1);
+  }
+  25% {
+    transform: scale(0.9, 1.1);
+  }
+  50% {
+    transform: scale(1.1, 0.9);
+  }
+  75% {
+    transform: scale(0.95, 1.05);
+  }
+}

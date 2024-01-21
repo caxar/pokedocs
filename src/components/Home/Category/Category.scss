@@ -1,0 +1,114 @@
+@import "../../../css-config/colors.scss";
+@import "../../../../src/css-config/mixins.scss";
+
+.category {
+  margin-bottom: 50px;
+  &-title {
+    margin-bottom: 20px;
+    font-size: 25px;
+    font-weight: 900;
+  }
+  &-block {
+    .menu-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 20px;
+      &_link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #c5c9d6;
+        width: 50px;
+        height: 50px;
+        border-radius: 10px;
+        cursor: pointer;
+        position: relative;
+        transition: all 0.2s ease-in-out;
+        &.fighting {
+          background: $fighting;
+        }
+        &.flying {
+          background: $bug;
+        }
+        &.poison {
+          background: $poison;
+        }
+        &.ground {
+          background: $ground;
+        }
+        &.rock {
+          background: $rock;
+        }
+        &.bug {
+          background: $bug;
+        }
+        &.ghost {
+          background: $ghost;
+        }
+        &.steel {
+          background: $steel;
+        }
+        &.fire {
+          background: $fire;
+        }
+        &.water {
+          background: $water;
+        }
+        &.grass {
+          background: $grass;
+        }
+        &.electric {
+          background: $electric;
+        }
+        &.psychic {
+          background: $psychic;
+        }
+        &.ice {
+          background: $ice;
+        }
+        &.dragon {
+          background: $dragon;
+        }
+        &.dark {
+          background: $dark;
+        }
+        &.fairy {
+          background: $fairy;
+        }
+        img {
+          width: 35px;
+          height: 35px;
+        }
+        span {
+          position: absolute;
+          bottom: -25px;
+          font-weight: 500;
+          opacity: 0;
+        }
+        &:hover {
+          transform: scale(1.1);
+        }
+        &.active {
+          span {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include xl {
+  .category-block .menu-item {
+    flex-wrap: wrap;
+    // gap: 10px;
+  }
+}
+
+@include md {
+  .category-block .menu-item {
+    column-gap: 20px;
+    row-gap: 30px;
+  }
+}

@@ -9,4 +9,4 @@
 Приложение запустится в браузере по url.\
  [http://localhost:3000](http://localhost:3000) .
 
-## Ссылка для просмотра демо <[cs07478.tw1.ru](https://cs07478.tw1.ru/)https://cs07478.tw1.ru/>
+## Ссылка для просмотра демо [cs07478.tw1.ru](https://cs07478.tw1.ru/)https://cs07478.tw1.ru/

@@ -491,6 +491,9 @@
   }
   .details-content_top {
     flex-direction: column;
+    img {
+      width: 125px;
+    }
   }
   .top-text {
     align-items: center;

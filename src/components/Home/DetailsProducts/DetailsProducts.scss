@@ -1,4 +1,5 @@
 @import "../../../css-config/colors.scss";
+@import "../../../css-config/mixins.scss";
 
 .details {
   &-bg {
@@ -470,5 +471,28 @@
   }
   75% {
     transform: scale(0.95, 1.05);
+  }
+}
+
+// @include xl {
+// }
+
+@include md {
+  .evolution-item_img {
+    width: 120px !important;
+    height: 120px !important;
+  }
+}
+
+@include sm {
+  .evolution-block {
+    flex-direction: column;
+    gap: 25px;
+  }
+  .details-content_top {
+    flex-direction: column;
+  }
+  .top-text {
+    align-items: center;
   }
 }
